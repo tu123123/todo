@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<title>HTML Tutorial</title>
+<header>
+<script src="webb.js"></script>
+<link rel="stylesheet" type="text/css" href="web.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</header>
+
+<body>
+<div class="container">
+<h2>TO-DO LIST</h2>
+<div class="e-item">
+<p onclick="clickItem()">Enter Item</p>
+<input onfocusout="unclick()" onclick="clickItem()" class="i-item" ></input>
+</div>
+<div class="des">
+<fieldset>
+<legend onclick="clickDes()">Description</legend>
+<input onfocusout="unclickDes()" onclick="clickDes()"  class="i-des"></input>
+</fieldset>
+<button>ADD</button>
+</div>
+<div class="list">
+<fieldset >
+<legend>List To-do</legend>
+<div class="item-list" id="l-1">
+<div class="title">
+<div class="value" id="v-1">
+<input onchange="del(this,'l-1','v-1')" type="checkbox" name="todo1" value="Read React book"></input>
+<label for="todo1">Read React book</label>
+</div>
+<div class="option">
+<button>
+Edit
+</button>
+<button onclick="show('l-1')">
+Chi tiết
+</button>
+<button class="del">
+delete
+</button>
+</div>
+</div>
+<div class="items-1"><p>Detail:ok phết</p></div>
+</div>
+
+
+<div class="item-list" id="l-2">
+<div class="title">
+<div class="value" id="v-2">
+<input onchange="del(this,'l-2','v-2')" type="checkbox" name="todo1" value="Read React book"></input>
+<label for="todo1">ăn chơi</label>
+</div>
+<div class="option">
+<button>
+Edit
+</button>
+<button onclick="show('l-2')">
+Chi tiết
+</button>
+<button class="del">
+delete
+</button>
+</div>
+</div>
+<div class="items-1"><p>Detail:ok à</p></div>
+</div>
+
+
+</fieldset>
+<div class="option-main">
+<button>
+CLEAR ALL
+</button>
+<button>
+CLEAR DONE
+</button>
+</div>
+</div>
+</body>
+
+
+</html>
